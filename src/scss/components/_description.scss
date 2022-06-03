@@ -1,7 +1,28 @@
+@import "../base/breakpoints";
+
 .section__description-desc {
   font-size: $normal;
   line-height: $normal-line;
   font-weight: $light;
   padding: 2.4rem 0 3.2rem;
   width: 60%;
+}
+
+@include xl {
+  .section__description-desc {
+    width: 80%;
+  }
+}
+
+@include lg {
+  .section__description-desc {
+    width: 100%;
+    padding: 1.6rem 0 2.4rem;
+  }
+}
+
+@include rwd(763px) {
+  .section__description-desc {
+    text-align: center;
+  }
 }

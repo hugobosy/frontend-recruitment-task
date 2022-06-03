@@ -1,4 +1,7 @@
+@import "../base/breakpoints";
+
 .section__description-btn {
+  display: block;
   font-size: $normal;
   line-height: $small-line;
   font-weight: $bolder;
@@ -11,5 +14,11 @@
   transition: .4s;
   &:hover {
     background-color: $secondary;
+  }
+}
+
+@include rwd(763px) {
+  .section__description-btn {
+    margin: $center;
   }
 }

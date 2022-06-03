@@ -14,6 +14,10 @@ html {
   grid-gap: 9.6rem;
   align-items: center; }
 
+@media (max-width: 1200px) {
+  .section__description {
+    grid-gap: 3.2rem; } }
+
 .section__image {
   max-width: 100%; }
 
@@ -22,6 +26,15 @@ html {
   line-height: 5.04rem;
   font-weight: 700; }
 
+@media (max-width: 1200px) {
+  .section__description-title {
+    font-size: 3.6rem; } }
+
+@media (max-width: 763px) {
+  .section__description-title {
+    text-align: center;
+    font-size: 3.6rem; } }
+
 .section__description-desc {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -29,7 +42,21 @@ html {
   padding: 2.4rem 0 3.2rem;
   width: 60%; }
 
+@media (max-width: 1200px) {
+  .section__description-desc {
+    width: 80%; } }
+
+@media (max-width: 992px) {
+  .section__description-desc {
+    width: 100%;
+    padding: 1.6rem 0 2.4rem; } }
+
+@media (max-width: 763px) {
+  .section__description-desc {
+    text-align: center; } }
+
 .section__description-btn {
+  display: block;
   font-size: 1.6rem;
   line-height: 1.6rem;
   font-weight: 700;
@@ -42,6 +69,10 @@ html {
   transition: .4s; }
   .section__description-btn:hover {
     background-color: #003990; }
+
+@media (max-width: 763px) {
+  .section__description-btn {
+    margin: 0 auto; } }
 
 .section {
   max-width: 140rem;

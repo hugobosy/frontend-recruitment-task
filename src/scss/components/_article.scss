@@ -1,7 +1,16 @@
 @import '../base/var';
+@import "../base/breakpoints";
+
 .section__description {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: $unit96;
   align-items: center;
+}
+
+
+@include xl {
+  .section__description {
+    grid-gap: $unit32;
+  }
 }

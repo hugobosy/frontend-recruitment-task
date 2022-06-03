@@ -1,5 +1,21 @@
+@import '../base/breakpoints';
+
 .section__description-title {
-  font-size: $big;
+  font-size: $biggest;
   line-height: $big-line;
   font-weight: $bolder;
+}
+
+@include xl {
+  .section__description-title {
+    font-size: $bigger;
+  }
+}
+
+
+@include rwd(763px) {
+  .section__description-title {
+    text-align: center;
+    font-size: $bigger;
+  }
 }
