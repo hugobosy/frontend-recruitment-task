@@ -1,0 +1,12 @@
+@import '../base/var';
+@import 'image';
+@import 'title';
+@import 'description';
+@import 'button';
+
+
+.section {
+  max-width: $max-width;
+  margin: $center;
+  padding: $unit96 $unit16;
+}
