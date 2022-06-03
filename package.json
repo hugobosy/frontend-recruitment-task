@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "frontend-recruitment-task",
   "version": "1.0.0",
   "description": "Zadanie jest przeznaczone na każdy poziom umiejętności developera, dzieli się na poszczególne zadania,\r które są stopniowo coraz trudniejsze. Każdy powinien zrobić test na tyle ile aktualnie potrafi, gdyż\r poszukujemy bardzo często osób z różnym poziomem wiedzy.",

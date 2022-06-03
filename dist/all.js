@@ -1,0 +1,1 @@
+import {handleClick} from "../src/js/handleClick";

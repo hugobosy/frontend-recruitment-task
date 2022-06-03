@@ -1,37 +1,18 @@
-const btn = document.querySelector('.section__description-btn'); //button
-const popup = document.querySelector('.popup__background'); //background popup
-const popupContent = document.querySelector('.popup__content'); //popup
-const closePopup = document.querySelector('.popup__exit'); // button close popup
-const number = document.querySelector('.counter');
-const reset = document.querySelector('.reset');
+import {handleClick} from "./handleClick.js";
+import {exitPopup} from "./exitPopup.js";
+import {resetCounter} from "./resetCounter.js";
+import {btn, closePopup, number, reset, popup, popupContent} from "./elementsDOM.js";
 
 let counter = localStorage.length ? localStorage.getItem('counter') : 0;
 
-
-console.log(counter)
-const handleClick = () => {
-    popup.style.transform = 'scale(1)';
-    popupContent.style.transform = 'scale(1) translate(-50%, -50%)';
-    counter++;
-    localStorage.setItem('counter', String(counter));
-    number.textContent = localStorage.getItem('counter') + ' times';
-    counter > 5 ? reset.classList.add('active') : reset.classList.remove('active');
-}
-
-const exitPopup = () => {
-    popup.style.transform = 'scale(0)';
-    popupContent.style.transform = 'scale(0) translate(-50%, -50%)';
-}
-
-const resetCounter = () => {
-    localStorage.setItem('counter', '0');
-    counter = 0;
-    number.textContent = localStorage.getItem('counter') + ' times';
-    reset.classList.remove('active');
-}
-
-btn.addEventListener('click', handleClick)
-popup.addEventListener('click', exitPopup)
-closePopup.addEventListener('click', exitPopup)
-reset.addEventListener('click', resetCounter)
+btn.addEventListener('click', () => {
+    handleClick(popup, popupContent, counter, number, reset)
+    counter++
+})
+popup.addEventListener('click', () => exitPopup(popup, popupContent))
+closePopup.addEventListener('click', () => exitPopup(popup, popupContent))
+reset.addEventListener('click', () => {
+    resetCounter(counter, reset, number)
+    counter = 0
+})
 
