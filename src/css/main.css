@@ -83,7 +83,7 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(0) translate(-50%, -50%);
   width: 60%;
   background-color: #FFF;
   padding: 5.6rem 9.5rem; }
@@ -128,4 +128,6 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(18, 18, 18, 0.5); }
+  background-color: rgba(18, 18, 18, 0.5);
+  transform: scale(0);
+  transition: .4s; }

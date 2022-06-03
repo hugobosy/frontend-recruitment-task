@@ -1,5 +1,5 @@
 @mixin absolute-center {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(0) translate(-50%, -50%);
 }

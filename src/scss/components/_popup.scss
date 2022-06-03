@@ -10,4 +10,6 @@
   width: 100vw;
   height: 100vh;
   background-color: $bgc-popup;
+  transform: scale(0);
+  transition: .4s;
 }
