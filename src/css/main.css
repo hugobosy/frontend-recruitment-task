@@ -1,22 +1,15 @@
-:root {
-  --dark: #121212;
-  --primary: #E4C1AE;
-  --white: #FFF;
-  --opacity: .5;
-  --big: 4.2rem;
-  --normal: 1.6rem;
-  --big-line: 5.04rem;
-  --normal-line: 2.4rem;
-  --small-line: 1.6rem;
-  --roboto: 'Roboto', sans-serif;
-  --bolder: 700;
-  --bold: 500;
-  --light: 300; }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif; }
+
+.section {
+  display: flex;
+  max-width: 140rem;
+  margin: 0 auto; }
+  .section .section__image {
+    max-width: 100%; }

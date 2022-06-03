@@ -1,2 +1,12 @@
 @import 'base/var';
 @import "base/reset";
+
+.section {
+  display: flex;
+  max-width: $max-width;
+  margin: $center;
+
+  .section__image {
+    max-width: 100%;
+  }
+}
