@@ -1,0 +1,28 @@
+.popup__exit {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 4rem;
+  right: 4rem;
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 150%;
+    width: 1px;
+    background-color: $dark;
+    top: -25%;
+    left: 50%;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    height: 150%;
+    width: 1px;
+    background-color: $dark;
+    top: -20%;
+    left: 50%;
+    transform: rotate(-45deg);
+  }
+}

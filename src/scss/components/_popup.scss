@@ -1,0 +1,13 @@
+@import "../base/var";
+@import "./popup/main-popup";
+@import "./popup/title-popup";
+@import "./popup/desc-popup";
+@import "./popup/exit-btn";
+.popup__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bgc-popup;
+}

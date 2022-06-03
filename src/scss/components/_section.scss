@@ -1,9 +1,9 @@
 @import '../base/var';
-@import 'article';
-@import 'image';
-@import 'title';
-@import 'description';
-@import 'button';
+@import 'article/article';
+@import 'article/image';
+@import 'article/title';
+@import 'article/description';
+@import 'article/button';
 
 
 .section {
