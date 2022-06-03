@@ -1,0 +1,7 @@
+@import '../base/var';
+.section__description {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: $unit96;
+  align-items: center;
+}

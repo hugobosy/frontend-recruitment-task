@@ -1,18 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-  color: #121212; }
-
 .section__description {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-gap: 9.6rem;
-  align-items: center; }
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); }
 
 .section__image {
   max-width: 100%; }
@@ -38,10 +26,7 @@ html {
   background-color: #E4C1AE;
   border-radius: 3.2rem;
   color: #FFF;
-  cursor: pointer;
-  transition: .4s; }
-  .section__description-btn:hover {
-    background-color: #003990; }
+  cursor: pointer; }
 
 .section {
   max-width: 140rem;
