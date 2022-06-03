@@ -1,5 +1,8 @@
+@import '../base/mixins';
+
 .reset {
   display: none;
+  @include button;
 }
 
 .reset.active {

@@ -1,3 +1,4 @@
+@import '../../base/mixins';
 .popup__content h2 {
-  font-size: $biggest;
+  @include title;
 }

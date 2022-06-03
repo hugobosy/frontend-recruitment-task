@@ -1,8 +1,16 @@
 @import '../../base/mixins';
+@import '../../base/breakpoints';
+
 .popup__content {
   position: absolute;
   @include absolute-center;
   width: 60%;
   background-color: $white;
   padding: 5.6rem 9.5rem;
+}
+
+@include sm {
+  .popup__content{
+    padding: 3rem;
+  }
 }

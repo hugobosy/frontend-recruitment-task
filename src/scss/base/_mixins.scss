@@ -3,3 +3,41 @@
   left: 50%;
   transform: scale(0) translate(-50%, -50%);
 }
+
+@mixin button {
+  font-size: $normal;
+  line-height: $small-line;
+  font-weight: $bolder;
+  padding: $button-padding;
+  border: 0;
+  background-color: $primary;
+  border-radius: $radius;
+  color: $white;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+@mixin desc {
+  font-size: $normal;
+  line-height: $normal-line;
+  font-weight: $light;
+  padding: 2.4rem 0 3.2rem;
+}
+
+@mixin title {
+  font-size: $biggest;
+  line-height: $big-line;
+  font-weight: $bolder;
+}
+
+@mixin exit {
+  content: '';
+  position: absolute;
+  height: 150%;
+  width: 1px;
+  background-color: $dark;
+  left: 50%;
+}

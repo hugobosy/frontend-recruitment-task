@@ -1,9 +1,8 @@
 @import '../../base/breakpoints';
+@import '../../base/mixins';
 
 .section__description-title {
-  font-size: $biggest;
-  line-height: $big-line;
-  font-weight: $bolder;
+  @include title;
 }
 
 @include xl {

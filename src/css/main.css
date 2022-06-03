@@ -88,13 +88,20 @@ html {
   background-color: #FFF;
   padding: 5.6rem 9.5rem; }
 
+@media (max-width: 576px) {
+  .popup__content {
+    padding: 3rem; } }
+
 .popup__content h2 {
-  font-size: 4.2rem; }
+  font-size: 4.2rem;
+  line-height: 5.04rem;
+  font-weight: 700; }
 
 .popup__content p {
   font-size: 1.6rem;
+  line-height: 2.4rem;
   font-weight: 300;
-  padding: 2.4rem 0 0; }
+  padding: 2.4rem 0 3.2rem; }
 
 .popup__exit {
   position: absolute;
@@ -109,8 +116,8 @@ html {
     height: 150%;
     width: 1px;
     background-color: #121212;
-    top: -25%;
     left: 50%;
+    top: -25%;
     transform: rotate(45deg); }
   .popup__exit::after {
     content: '';
@@ -118,12 +125,24 @@ html {
     height: 150%;
     width: 1px;
     background-color: #121212;
-    top: -20%;
     left: 50%;
+    top: -20%;
     transform: rotate(-45deg); }
 
 .reset {
-  display: none; }
+  display: none;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  padding: 1.6rem 4rem;
+  border: 0;
+  background-color: #E4C1AE;
+  border-radius: 3.2rem;
+  color: #FFF;
+  cursor: pointer;
+  transition: .4s; }
+  .reset:hover {
+    background-color: #003990; }
 
 .reset.active {
   display: block; }
