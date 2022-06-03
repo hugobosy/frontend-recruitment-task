@@ -12,3 +12,11 @@
   --bolder: 700;
   --bold: 500;
   --light: 300; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
